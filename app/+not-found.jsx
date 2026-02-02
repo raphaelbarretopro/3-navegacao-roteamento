@@ -1,15 +1,14 @@
+import { router } from "expo-router"
 import { Pressable, Text, View } from "react-native"
 import { styles } from "../styles/styles"
-import { router } from "expo-router"
 
-export default function Settings() {
+export default function NotFound() {
     const goToHome = () => {
-        router.navigate("/")
+        router.replace("/")
     }
-
     return (
-        <View style={[styles.container, { backgroundColor: "#fac124ff" }]}>
-            <Text>Settings</Text>
+        <View style={[styles.container, { backgroundColor: "#F7D9C4" }]}>
+            <Text>Essa página não existe</Text>
             <Pressable onPress={goToHome}>
                 <Text> Ir para Home➡️</Text>
             </Pressable>

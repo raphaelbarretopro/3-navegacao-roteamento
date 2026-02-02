@@ -15,8 +15,9 @@ export default function RootLayout() {
         <Stack.Screen name="index" options={{ headerTitle: "Home" }} />
         <Stack.Screen name="settings" options={{ headerTitle: "Configurações" }} />
         <Stack.Screen name="user" options={{ headerTitle: "Usuário" }} />
-        <Stack.Screen name="product" options={{ headerTitle: "Produtos" }} />
-        <Stack.Screen name="product-detail" options={{ headerTitle: "Detalhes do Produto" }} />
+        <Stack.Screen name="products/index" options={{ headerTitle: "Produtos" }} />
+        <Stack.Screen name="products/[id]" options={{ headerTitle: "Detalhes do Produto" }} />
+        <Stack.Screen name="+not-found" options={{ headerTitle: "ERRO", headerLeft: () => null }} />
       </Stack>
     </>
   )
